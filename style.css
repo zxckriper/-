@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle, rgb(255, 0, 0) 0%, rgb(0, 109, 235) 100%);
+}
+
+header,
+main,
+footer {
+    width: 100%;
+    padding: 0 100px;
+    font-family: "Poiret One", sans-serif;
+}
+
+.container {
+    background-color: rgba(196, 201, 255, 0.284);
+    padding: 100px 100px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 6px 6px rgba(209, 246, 255, 0.365), 12px 12px rgba(255, 193, 240, 0.342);
+}
+
+header .title {
+    font-size: 45px;
+    letter-spacing: 6px;
+
+
+}
+
+.header .subtitle {
+    font-size: 25px;
+}
+
+header {
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    transition: 0.5s;
+
+}
+
+.card:hover {
+    scale: 110%;
+}
+
+.card-img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 60%;
+}
+
+.card-title {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.card-price {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    background-color: rgb(224, 224, 224);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    cursor: pointer
+}
+
+.card-button::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-image: url("img/icons/icons8-cart-30.png");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 4px;
+    bottom: 1px;
+}
+
+main .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.author{
+    font-size: 20px;
+}
